@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(/assets/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000000;
+  padding: 24px 50px;
+  position: relative;
+}
+.logo {
+  height: 30px;
+  margin-right: 2.5em;
+}
+
+.grow-list {
+  flex-grow: 1;
+}
+
+.line {
+  background-color: #969696;
+  height: 2.5em;
+  padding: 0 0.5px;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  margin-left: 1.5em;
+}
+.list li {
+  margin: 0 1em;
+  padding: 5px;
+  cursor: pointer;
+}
+.list li:first-child::after {
+  content: "\FE65";
+  margin-left: .1em;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.button-small {
+  border: none;
+  border-radius: 5px;
+  background-color: #ba0cc5;
+  padding: 7px 15px;
+}
+.list li,
+.button-small {
+  font-weight: bold;
+}
+
+/* --------------------------------------------  */
+
+.hero {
+    height: 90vh;
+}
+.hero-heading {
+  text-align: center;
+  font-size: 3.5em;
+  padding: 0 4.5em;
+  padding-top: 1.5em;
+}
+.hero-description {
+  font-size: larger;
+  text-align: center;
+  padding: 10px 0;
+}
+.button-large {
+  border: none;
+  border-radius: 8px;
+  background: #ba0cc5;
+  display: block;
+  font-size: larger;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px 12px;
+}
